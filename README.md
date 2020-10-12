@@ -3,7 +3,7 @@ ankicommunity.github.io
 =======================
 
 # Description
-This repo contains the page of the site that hold the knowledge base of the Anki community projetcs
+This repository contains the knowledge base of Anki Community.
 
 # Link
 https://ankicommunity.github.io/

@@ -27,7 +27,7 @@ the following command give you the id of the running container
 
     docker ps
 
-
+ .
 
     docker exec -it dde248e9bc6e /bin/sh
 give you a shell inside a given docker dde248e9bc6e being the container id.

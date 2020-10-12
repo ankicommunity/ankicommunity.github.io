@@ -27,12 +27,15 @@ the following command give you the id of the running container
 
     docker ps
 
- .
+if you know the name of your docker container you can use it derectly instead of dde248e9bc6e (dde248e9bc6e is the docker id)
 
     docker exec -it dde248e9bc6e /bin/sh
+    
 give you a shell inside a given docker dde248e9bc6e being the container id.
 run
+
     ./ankisyncctl.py adduser yourusername
+    
 to create an user on your docker instance
 You need to create a free dockerhub account (you just need a valid email) to publish your container such that other dont have to redo it
 

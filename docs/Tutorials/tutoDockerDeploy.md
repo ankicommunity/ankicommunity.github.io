@@ -1,4 +1,4 @@
-How to deploy a containerised version of the Anki sync server
+How to deploy a containerized  version of the Anki sync server
 ==============================================================
 # One time setup
 Do this if you plan to keep your anki server running only for a time. if you want to run it permanently use one of the followings method
@@ -22,7 +22,7 @@ See below how you can point your desktop application to the server you've just c
 
 
 # On a normal server
-Docker will take care of starting the service on boot so you don't have to worry about that. You can setup the server with these commands:
+Docker will take care of starting the service on boot so you don't have to worry about that. You can set up the server with thoses commands:
 
     export DOCKER_USER=root
     export ANKI_SYNC_DATA_DIR=/etc/anki-sync-server

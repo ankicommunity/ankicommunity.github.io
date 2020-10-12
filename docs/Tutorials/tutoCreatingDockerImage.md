@@ -24,6 +24,7 @@ You shoud have something like that that appeared
 
     'Creating new configuration file: ankisyncd.conf. Creating new authentication database: auth.db. Creating collections directory: collections. Updating database schema Successfully updated table 'auth' No session DB found at the configured 'session_db_path' path. Starting tsudoko's anki-sync-server [2020-10-06 10:43:50,853]:INFO:ankisyncd:ankisyncd [unknown version] (https://github.com/tsudoko/anki-sync-ser ver) [2020-10-06 10:43:51,110]:INFO:ankisyncd:Loaded config from /app/anki-sync-server/ankisyncd.conf [2020-10-06 10:43:51,113]:INFO:ankisyncd.users:Found auth_db_path in config, using SqliteUserManager for auth [2020-10-06 10:43:51,119]:INFO:ankisyncd.sessions:Found session_db_path in config, using SqliteSessionManager for auth [2020-10-06 10:43:51,126]:INFO:ankisyncd:Serving HTTP on 0.0.0.0 port 27701... [2020-10-06 10:43:51,613]:INFO:ankisyncd.http:127.0.0.1 "GET / HTTP/1.1" 200 16'
 the following command give you the id of the running container
+
     docker ps
     
     docker exec -it dde248e9bc6e /bin/sh

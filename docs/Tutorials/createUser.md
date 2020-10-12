@@ -1,17 +1,33 @@
-How to deploy a containerised version of the Anki sync server
+
+How to create an user on the anki sync server
 ==============================================================
 
-# Creating users when anki sync server run directly
-just run ./ankisyncctl.py --help
+# Creating users when anki sync server run directly on the os
+just run
+    ./ankisyncctl.py adduser yourusername
+to list all the command, run 
+    ./ankisyncctl.py --help
 
 # Creating users when anki sync server is in a docker
 Your server is running, the client try to connect to it and you're greeted with  "the password is not correct or the user dont exist" -> you need to create an user first
 For this you need to access your container instance in order to use the server's ctl:
 
-The first command give you a shell inside the docker container, once you are inside you run the second one (./ankisyncctl.py) and this tool allow you to create/delete/list/change password for an user.
 
+The first command give you a shell inside the docker container, once you are inside you run the second one (./ankisyncctl.py)
+this tool allow you to create/delete/list/change password for an user.
+
+if your container is not named anki-container you can get his id with
+
+    # docker ps
+    and use the docker id instead of the name in the following command .
+    
+Otherwise you can just run the followings commands 
+    
     # docker exec -it anki-container /bin/sh
+    
     /app/anki-sync-server # ./ankisyncctl.py --help
+    
+
     usage: ./ankisyncctl.py <command> [<args>]
     
     Commands:
@@ -19,9 +35,10 @@ The first command give you a shell inside the docker container, once you are ins
       deluser <username> - delete a user
       lsuser             - list users
       passwd <username>  - change password of a user
+
+     
     /app/anki-sync-server # ./ankisyncctl.py adduser kuklinistvan
     Enter password for kuklinistvan:
-    /app/anki-sync-server #
 
 Done!
 

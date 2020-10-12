@@ -58,3 +58,4 @@ your local ip addresse should look like 192.168.1.XXX (try to use a static one a
 # Troobleshooting
 
 If you encounter some error by following thoses procedures and you find out how to fix please create a Push request adding how to solve the problem here.
+

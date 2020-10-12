@@ -9,12 +9,12 @@ to list all the command, run
     ./ankisyncctl.py --help
 
 # Creating users when anki sync server is in a docker
-Your server is running, the client try to connect to it and you're greeted with  "the password is not correct or the user dont exist" -> you need to create an user first
+Your server is running, the client try to connect to it and you're greeted with  "the password is not correct or the user don't exist" -> you need to create a user first
 For this you need to access your container instance in order to use the server's ctl:
 
 
 The first command give you a shell inside the docker container, once you are inside you run the second one (./ankisyncctl.py)
-this tool allow you to create/delete/list/change password for an user.
+this tool allows you to create/delete/list/change password for a user.
 
 if your container is not named anki-container you can get his id with
 

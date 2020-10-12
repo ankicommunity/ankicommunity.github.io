@@ -11,7 +11,7 @@
 
 
 
-Then I test whether any of these steps done on any (droid or desktop) instance breaks the synchronization:
+Then, test whether any of these steps done on any (droid or desktop) instance breaks the synchronization:
 
 1. Review some cards
 2. Add new cards
@@ -24,5 +24,5 @@ Then I test whether any of these steps done on any (droid or desktop) instance b
 
 
 
-If no error occurs during the above practices then I update the tested version informations in [ClientSetup](https://ankicommunity.github.io/Tutorials/Index/ClientSetup)
+If no error occurs during the above practices then update the tested version informations in [ClientSetup](https://ankicommunity.github.io/Tutorials/Index/ClientSetup)
 

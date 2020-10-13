@@ -25,11 +25,12 @@ if you get an issue like "Authentication not allowed over insecure http" you may
 # Anki Desktop
 
 Ensure you're using a supported version :  
+
 |                            | Main                                                         | Mirror                                                       | Size     | SHA256                                                       |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- | ------------------------------------------------------------ |
 | AnkiDesktop  for GNU/Linux | [2.1.19](https://apps.ankiweb.net/downloads/current/anki-2.1.19-linux-amd64.tar.bz2) | [2.1.19](https://mega.nz/file/lVxRgRwI#Oqohl1M0Ju9RrYa7D6uV5SOtwgqVxkxPKqNYxcOh858) | 127.7 MB | `ada59237b8b3774712d6309821db4b6cb1d2c625284302aa09bc7313ada76fc0` |
-| AnkiDesktop for Windows  | [2.1.19](https://apps.ankiweb.net/downloads/current/anki-2.1.19-windows.exe) | [2.1.19](https://mega.nz/file/5MwhxLjT#TLGA03KMbnRmDiHO3A-Yfm-y6xNgW3eiDUgEk-TXYyU) | 97,3 MB  | `90be6a3e5a6f4373ba3342bd3dfbe61e9013bb2a4acced2fcdd594b4c651a665` |
-| AnkiDesktop for Mac OS X | [2.1.19](https://apps.ankiweb.net/downloads/current/anki-2.1.19-mac.dmg) | [2.1.19](https://mega.nz/file/dc4HXbKZ#m17YAdB5-SZ_rET23g8VT12Y-ECMB6rd1UIUfmKMEHg) | 127,5 MB | `9be3e3bdf884f865e15f308e72b1ed0213c061d27102f80d01897d5355eef8e7` |
+| AnkiDesktop for Windows    | [2.1.19](https://apps.ankiweb.net/downloads/current/anki-2.1.19-windows.exe) | [2.1.19](https://mega.nz/file/5MwhxLjT#TLGA03KMbnRmDiHO3A-Yfm-y6xNgW3eiDUgEk-TXYyU) | 97,3 MB  | `90be6a3e5a6f4373ba3342bd3dfbe61e9013bb2a4acced2fcdd594b4c651a665` |
+| AnkiDesktop for Mac OS X   | [2.1.19](https://apps.ankiweb.net/downloads/current/anki-2.1.19-mac.dmg) | [2.1.19](https://mega.nz/file/dc4HXbKZ#m17YAdB5-SZ_rET23g8VT12Y-ECMB6rd1UIUfmKMEHg) | 127,5 MB | `9be3e3bdf884f865e15f308e72b1ed0213c061d27102f80d01897d5355eef8e7` |
 
 
 1. Launch Anki

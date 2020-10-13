@@ -9,7 +9,7 @@ You may be aware that CPU come in different flavor.
 There are two parameters to take into account that are the Architecture and the number of bit 
 the two main architecture are X86 commonly found in intel CPU (desktop computer, server, etc) and ARM (found in raspberry pi as well as other SBC and most phones)
 Most x86 CPU today are 64 bits.
-Ehen it come to ARM, 32 and 64 bits are still quite common. (older raspberry pi where 32 bits, from the 3B+ (with a 64 bit OS) are now 64 bit)
+When it come to ARM, 32 and 64 bits are still quite common. (older raspberry pi where 32 bits, from the 3B+ (with a 64 bit OS) are now 64 bit)
 
 # Instructions
     git clone https://github.com/ankicommunity/docker-anki-sync-server
@@ -43,7 +43,7 @@ You need to create a free dockerhub account (you just need a valid email) to pub
 this is analogue to a git commit
     docker login # login to dockerhub such that you can push it to the platform
     docker push yourdockerid/yourreponame:latest # this is analogue to a git push, it send the docker image to  dockerhub
-Dont forget to make a pull request to add the instruction for your platform (under [How to deploy a containerised version of the Anki sync server](https://ankicommunity.github.io/Tutorials/Index/DockerDeploy/)
+Don't forget to make a pull request to add the instruction for your platform (under [How to deploy a containerised version of the Anki sync server](https://ankicommunity.github.io/Tutorials/Index/DockerDeploy/)
 
 # Troobleshooting
 if you happen to have any issue with thoses explanations and you do find a way to solve it dont hesitate to make a push request with your issue here.

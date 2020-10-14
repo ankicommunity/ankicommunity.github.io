@@ -19,7 +19,7 @@ Ensure you're using a supported version :
 Open the app, then slide off the menu from the left side. Go Settings > Advanced > Custom sync server and specify the same two urls you've specified on the desktop client.
 
 From now on, you can synchronize your collection the same way you would if you were using AnkiWeb. Head to the main screen of the application (the list of decks) and slide down to synchronize (or use the icon next to the menu in the top right corner). Although Anki will ask for your AnkiWeb ID the first time, you need to enter the server credentials you've set up previously instead.
-if you get an issue like "Authentication not allowed over insecure http" you may need to setup https
+if you get an issue like "Authentication not allowed over insecure http" ensure you are using the right version. otherwise you may need to setup https (it's easier to roll back to the app mentionned above)
 
 
 # Anki Desktop

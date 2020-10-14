@@ -3,6 +3,7 @@ HTTPS Encryption with Apache Proxy
 
 # Setup Apache2
 if you want to use the anki sync server with AnkiDroid you may be faced with an error about unsecured download you may want to set up a https proxy
+you may need to install a plugins to allow your self signed certificat.
 You need an apache2 server running somewhere.
 
 Here is the detailed procedure for apache2

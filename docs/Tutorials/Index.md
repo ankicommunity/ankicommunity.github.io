@@ -1,18 +1,14 @@
 ![](book_pixabay.png)
 
-We are noticing a demand for more step-by-step, userfriendly tutorials regarding to our projects. Here you can find our walkthroughs.
+Hey there! If you are a newcomer, you are at the right place.
 
+One of the main goals of this community is to make beginners the experience of
+setting up our projects as seamlessly, as possible. If you are stuck, we hope that you'll find
+the information you need.
 
-[Client Setup](https://ankicommunity.github.io/Tutorials/Index/DockerDeploy/tutoClientSetup/)
+If you don't, you may still contact us at
+[Gitter](https://github.com/ankicommunity/) for help. Also, if you find that
+something useful is missing from this manual and you have the time, we are happy
+to [accept pull requests to this portal](https://github.com/ankicommunity/ankicommunity.github.io).
 
-[Manual client server testing](https://ankicommunity.github.io/Tutorials/Index/DockerDeploy/tutoTesting/)
-
-[How to create an user on the anki sync server](https://ankicommunity.github.io/Tutorials/Index/DockerDeploy/tutoCreateUser/)
-
-[HTTPS Encryption with Apache Proxy](https://ankicommunity.github.io/Tutorials/Index/DockerDeploy/tutoCreateUser/)
-
-[How to create an user on the anki sync server](https://ankicommunity.github.io/Tutorials/Index/DockerDeploy/tutoHTTPSProxy/)
-
-[How to deploy a containerised version of the Anki sync server](https://ankicommunity.github.io/Tutorials/Index/DockerDeploy/tutoDockerDeploy/)
-
-[How to create a docker image on a new device / architecture](https://ankicommunity.github.io/Tutorials/Index/DockerDeploy/tutoCreatingDockerImage/)
+Please refer to the menu for the tutorials.

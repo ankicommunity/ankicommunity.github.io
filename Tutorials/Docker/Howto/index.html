@@ -1,0 +1,959 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+    
+    
+      
+        <title>How to use our Docker images - Anki Community Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-use-our-docker-images" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="Anki Community Wiki" class="md-header-nav__button md-logo" aria-label="Anki Community Wiki">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Anki Community Wiki
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              How to use our Docker images
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Supported%20Projects/anki-sync-server/" class="md-tabs__link">
+          Supported Projects
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Index/" class="md-tabs__link md-tabs__link--active">
+          Tutorials
+        </a>
+      
+    </li>
+  
+
+      
+        
+  <li class="md-tabs__item">
+    <a href="https://gitter.im/ankicommunity/community" class="md-tabs__link">
+      Contact us via Gitter
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Anki Community Wiki" class="md-nav__button md-logo" aria-label="Anki Community Wiki">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Anki Community Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Supported Projects
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Supported Projects" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Supported Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Supported%20Projects/anki-sync-server/" class="md-nav__link">
+      anki-sync-server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Supported%20Projects/SyncRedirector/" class="md-nav__link">
+      SyncRedirector
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Index/" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Docker
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Docker" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Docker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        How to use our Docker images
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      How to use our Docker images
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-of-docker" class="md-nav__link">
+    Installation of Docker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#an-example-of-installation-anki-sync-server" class="md-nav__link">
+    An example of installation anki-sync-server
+  </a>
+  
+    <nav class="md-nav" aria-label="An example of installation anki-sync-server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-time-setup" class="md-nav__link">
+    One-time setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permanent-server-setup" class="md-nav__link">
+    Permanent server setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Permanent server setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#permanent-server-setup-using-docker-compose" class="md-nav__link">
+    Permanent server setup using Docker-compose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-the-container-administering-the-server" class="md-nav__link">
+    Accessing the container - administering the server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    Encryption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troobleshooting" class="md-nav__link">
+    Troobleshooting
+  </a>
+  
+    <nav class="md-nav" aria-label="Troobleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exec-format-error" class="md-nav__link">
+    exec format error
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Howto_Recompiling/" class="md-nav__link">
+      Compiling Docker images for foreign architectures
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Encryption with proxy
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Encryption with proxy" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Encryption with proxy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Encryption%20with%20proxy/Apache/" class="md-nav__link">
+      HTTPS Encryption with Apache Proxy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../anki_custom_sync_server/" class="md-nav__link">
+      Custom Synchronization Server
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://gitter.im/ankicommunity/community" class="md-nav__link">
+      Contact us via Gitter
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-of-docker" class="md-nav__link">
+    Installation of Docker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#an-example-of-installation-anki-sync-server" class="md-nav__link">
+    An example of installation anki-sync-server
+  </a>
+  
+    <nav class="md-nav" aria-label="An example of installation anki-sync-server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-time-setup" class="md-nav__link">
+    One-time setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permanent-server-setup" class="md-nav__link">
+    Permanent server setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Permanent server setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#permanent-server-setup-using-docker-compose" class="md-nav__link">
+    Permanent server setup using Docker-compose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-the-container-administering-the-server" class="md-nav__link">
+    Accessing the container - administering the server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    Encryption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troobleshooting" class="md-nav__link">
+    Troobleshooting
+  </a>
+  
+    <nav class="md-nav" aria-label="Troobleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exec-format-error" class="md-nav__link">
+    exec format error
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="how-to-use-our-docker-images">How to use our Docker images</h1>
+<p>Servers backed by Docker images have the advantage that:</p>
+<ul>
+<li>If they work on our machine, they will probably work on your machine<ul>
+<li>Docker makes us easier to ship working versions of the server</li>
+<li>Docker makes you easier to configure the servers through the unified
+  interface it provides</li>
+</ul>
+</li>
+</ul>
+<p>As of yet, the easiest and most reliable way to install <code>anki-sync-server</code> is
+probably to use one of our Docker images.</p>
+<p><strong>You can grab an image from <a href="/Supported%20Projects/anki-sync-server/">Supported
+Projects</a>.</strong></p>
+<h2 id="installation-of-docker">Installation of Docker</h2>
+<p>Please refer to the tutorial on the installation <a href="https://docs.docker.com/get-docker/">Docker's
+manual</a> to get started.</p>
+<div class="admonition note">
+<p class="admonition-title">It is quite easy to get started on Linux</p>
+<p>On a GNU/Linux distribution you can usually find Docker in the default package
+manager. Install the appropriate package and activate the service.</p>
+</div>
+<p>From now on we're assuming that you have installed Docker successfully to your
+machine.</p>
+<h2 id="an-example-of-installation-anki-sync-server">An example of installation <code>anki-sync-server</code></h2>
+<div class="admonition warning">
+<p class="admonition-title">This is a general quick tutorial for Docker</p>
+<p>The images we provide usually have special instructions. Please refer
+to the <code>README</code> of the appropriate repository. We are going to set up an instance of <code>anki-sync-server</code> here, but you
+can apply the instructions to any image.</p>
+</div>
+<h3 id="one-time-setup">One-time setup</h3>
+<p>If you only want to see the server in action the quickest way possible in an
+ad-hoc manner, you can start an instance it right now.</p>
+<ol>
+<li>Create a directory to persist the server data (such as your collections)</li>
+<li>Start a temporary container</li>
+</ol>
+<div class="highlight"><pre><span></span><code># substitute $PERSISTENCE_DIR and $DOCKER_IMAGE accordingly, for example:
+# export PERSISTENCE_DIR=/home/kuklinistvan/anki-sync-server-persistence/
+# export DOCKER_IMAGE=kuklinistvan/anki-sync-server:latest
+</code></pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">Select your own image</p>
+<p>Do not copy <code>DOCKER_IMAGE</code> from here, as this is just an example. Grab the
+identifier of the image you wish to use
+from <a href="/Supported%20Projects/anki-sync-server/">Supported Projects</a>.</p>
+</div>
+<div class="highlight"><pre><span></span><code>docker run -it \
+       --mount type=bind,source=&quot;$PERSISTENCE_DIR&quot;,target=/app/data \
+       -p 27701:27701 \
+       --name anki-container \
+       --rm \
+       $DOCKER_IMAGE
+</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--mount type=bind,source="$PERSISTENCE_DIR",target=/app/data</code></td>
+<td>Mounts the persistence into the container, such that the instance can write data into it.</td>
+</tr>
+<tr>
+<td><code>-p 27701:27701</code></td>
+<td>Opens a port on all of the network interfaces of host machine. First number: port number on the host machine (feel free to change it), second: the port of the server that runs in the container (fixed, you don't need to worry about it).</td>
+</tr>
+<tr>
+<td><code>--rm</code></td>
+<td>Remove the container after the execution is done. Note that it does not remove the <code>$PERSISTENCE_DIR</code>.</td>
+</tr>
+<tr>
+<td><code>$DOCKER_IMAGE</code></td>
+<td>The unique identifier of the image. Get it from <a href="/Supported%20Projects/anki-sync-server/">Supported Projects</a>.</td>
+</tr>
+<tr>
+<td><code>--name</code></td>
+<td>An arbitrary name to reference the container instance later.</td>
+</tr>
+<tr>
+<td><code>-it</code></td>
+<td>Run in foreground (see the <a href="https://docs.docker.com/engine/reference/run/">Docker reference</a> for the exact meaning)</td>
+</tr>
+</tbody>
+</table>
+<p>On Linux, you can interrupt this instance anytime by hitting Ctrl+C. You can
+restart the server with the same command.</p>
+<!-- See below how you can point your desktop application to the server you've just created. -->
+
+<h3 id="permanent-server-setup">Permanent server setup</h3>
+<p>If you are satisfied with the result you can make the service start at boot by
+modifying some of the flags.</p>
+<table>
+<thead>
+<tr>
+<th>Old flags</th>
+<th>New flags</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-it</code></td>
+<td><code>-itd</code></td>
+<td>Run in background (<a href="https://docs.docker.com/engine/reference/run/">Docker reference</a>)</td>
+</tr>
+<tr>
+<td><code>--rm</code></td>
+<td></td>
+<td>Do not remove the container if it has crashed. This gives you a chance to inspect it after it has stopped if something has gone wrong.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>--restart always</code></td>
+<td>Restart the image automatically if it has stopped. (<a href="https://docs.docker.com/engine/reference/run/#restart-policies---restart">Docker reference</a>)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The new version in the above example would look as follows:</p>
+<pre><code>docker run -itd \
+   --mount type=bind,source="$PERSISTENCE_DIR",target=/app/data \
+   -p "$HOST_PORT":27701 \
+   --name anki-container \
+   --restart always \
+   $DOCKER_IMAGE
+</code></pre>
+<p>As long as the Docker service starts at boot, you can set and forget the server
+that way.</p>
+<h4 id="permanent-server-setup-using-docker-compose">Permanent server setup using Docker-compose</h4>
+<p>Sometimes it is easier save the configuration and make it more readable with <code>docker-compose</code>.</p>
+<p>In this setup, you would create an empty directory with a <code>docker-compose.yml</code> similar to the one below.
+Please modify <code>&lt;SUBSTITUTE_$DOCKER_IMAGE_HERE&gt;</code> accordingly.</p>
+<pre><code>version: "3"
+
+services:
+    anki-container:
+        image: kuklinistvan/anki-sync-server:latest
+        container_name: anki-container
+
+        restart: always
+        ports:
+        - "27701:27701"
+        volumes:
+        - data:/app/data
+
+volumes:
+data:
+</code></pre>
+<p>When you're done, open up a terminal in that directory and control the instance
+with the commands below:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docker compose up</code></td>
+<td>Run the configuration in the foreground (interrupt with Ctrl+C on Linux)</td>
+</tr>
+<tr>
+<td><code>docker compose up -d</code></td>
+<td>Run the configuration in the background. Set and forget. It is going to start at system boot from now on.</td>
+</tr>
+<tr>
+<td><code>docker compose stop</code></td>
+<td>Stop the server.</td>
+</tr>
+<tr>
+<td><code>docker compose down -v</code></td>
+<td><strong>Destroy</strong> the instance <strong>along with the persistent <code>data</code> directory</strong>! This removes your collections! You may run this if you wish to start over or purge the server completely.</td>
+</tr>
+</tbody>
+</table>
+<p>Please refer to the <a href="https://docs.docker.com/compose/">Docker guides</a> for a more
+accurate reference of the commands and the arguments.</p>
+<h3 id="accessing-the-container-administering-the-server">Accessing the container - administering the server</h3>
+<p>The server has a command line administration interface, that you can access
+from a shell in your container. Provided that you did not alter the <code>name</code>
+attribute, your container should be named <code>anki-container</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can check the name of the container with <code>docker ps</code>.</p>
+</div>
+<p>You can access a shell in it while the container is running.</p>
+<pre><code>docker exec -it anki-container sh
+</code></pre>
+<p>In the case of <code>anki-sync-server</code>, you can access the admin CLI:</p>
+<pre><code>/app/anki-sync-server # ./ankisyncctl.py --help
+usage: ./ankisyncctl.py &lt;command&gt; [&lt;args&gt;]
+
+Commands:
+adduser &lt;username&gt; - add a new user
+deluser &lt;username&gt; - delete a user
+lsuser             - list users
+passwd &lt;username&gt;  - change password of a user
+</code></pre>
+<h2 id="encryption">Encryption</h2>
+<p><strong>Be warned</strong> that if you don't use any additional proxies, your connection will
+be unencrypted! That means if you use Anki to memorize your passwords they will
+be leaked :) </p>
+<p><sup>Please don't do that though, as Anki is not designed in mind for safely
+handling risky data, such as passwords, in the first place.</sup></p>
+<p>Please refer to one of the solutions at the <a href="Tutorials/Encryption%20with%20proxy/Apache/">Encryption</a> section.</p>
+<h2 id="troobleshooting">Troobleshooting</h2>
+<details class="note"><summary>Pull requests are welcome!</summary><p>If you encounter an error which is not listed here but you think
+it would be worth mentioning the solution, we are happy to accept
+your pull request to <a href="https://github.com/ankicommunity/ankicommunity.github.io">the repository of this portal</a>.</p>
+</details>
+<h3 id="exec-format-error">exec format error</h3>
+<p>Please refer to <a href="Tutorials/DockerHowto_ForeignArch/">this guide</a>.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../Index/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Index
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../Howto_Recompiling/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Compiling Docker images for foreign architectures
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ['navigation.instant', 'navigation.tabs'],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

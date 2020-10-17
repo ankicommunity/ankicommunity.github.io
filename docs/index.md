@@ -4,7 +4,7 @@
 
 ![](anki_community.png)
 
-We are a team of developers working together to maintain the original [`anki-sync-server`](https://github.com/ankicommunity/anki-sync-server) and other related projects. You have reached our primary knowledge base.
+We are a team of developers working together to maintain the original [`anki-sync-server`](/Supported%20Projects/anki-sync-server/) and other related projects. You have reached our primary knowledge base.
 
 
 

@@ -9,3 +9,20 @@ theme:
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
+  - admonition
+
+
+nav:
+  - Home: 'index.md'
+  - Supported Projects:
+    - anki-sync-server: 'Supported Projects/anki-sync-server.md'
+    - SyncRedirector: 'Supported Projects/SyncRedirector.md'
+  - Tutorials:
+    - Index: 'Tutorials/Index.md'
+    - Docker:
+      - 'Tutorials/Docker/Howto.md'
+      - 'Tutorials/Docker/Howto_Recompiling.md'
+    - Encryption with proxy:
+      - 'Tutorials/Encryption with proxy/Apache.md'
+    - Custom Synchronization Server: 'Tutorials/anki_custom_sync_server.md'
+  - Contact us via Gitter: 'https://gitter.im/ankicommunity/community'

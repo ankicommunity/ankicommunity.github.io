@@ -112,18 +112,18 @@ In this setup, you would create an empty directory with a `docker-compose.yml` s
 Please modify `<SUBSTITUTE_$DOCKER_IMAGE_HERE>` accordingly.
 
     version: "3"
-
+    
     services:
         anki-container:
             image: kuklinistvan/anki-sync-server:latest
             container_name: anki-container
-
+    
             restart: always
             ports:
             - "27701:27701"
             volumes:
             - data:/app/data
-
+    
     volumes:
     data:
 
@@ -159,7 +159,7 @@ In the case of `anki-sync-server`, you can access the admin CLI:
 
     /app/anki-sync-server # ./ankisyncctl.py --help
     usage: ./ankisyncctl.py <command> [<args>]
-
+    
     Commands:
     adduser <username> - add a new user
     deluser <username> - delete a user
@@ -177,7 +177,7 @@ be leaked :)
 <sup>Please don't do that though, as Anki is not designed in mind for safely
 handling risky data, such as passwords, in the first place.</sup>
 
-Please refer to one of the solutions at the [Encryption](Tutorials/Encryption%20with%20proxy/Apache/) section.
+Please refer to one of the solutions at the [Encryption](/Tutorials/Encryption%20with%20proxy/Apache/) section.
 
 
 ## Troobleshooting
@@ -190,5 +190,5 @@ Please refer to one of the solutions at the [Encryption](Tutorials/Encryption%20
 
 ### exec format error
 
-  Please refer to [this guide](Tutorials/DockerHowto_ForeignArch/).
+  Please refer to [this guide](/Tutorials/Docker/Howto_Recompiling/).
 

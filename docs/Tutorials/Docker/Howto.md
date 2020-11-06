@@ -115,7 +115,7 @@ Please modify `<SUBSTITUTE_$DOCKER_IMAGE_HERE>` accordingly.
     
     services:
         anki-container:
-            image: kuklinistvan/anki-sync-server:latest
+            image: <SUBSTITUTE_$DOCKER_IMAGE_HERE>
             container_name: anki-container
     
             restart: always

@@ -1,4 +1,4 @@
-# Configuring Anki to use a Custom Synchronization Server
+# Redirecting Anki to a custom synchronization server
 
 After you have set up an Anki server by following one of our guides (or some
 other way), here is how you can configure Anki to use your server instead AnkiWeb.

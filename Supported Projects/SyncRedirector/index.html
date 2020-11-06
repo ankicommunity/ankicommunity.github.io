@@ -8,8 +8,9 @@
       
       
       
+      
       <link rel="shortcut icon" href="../../favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.3">
     
     
       
@@ -17,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2cb7adb3.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f0267088.min.css">
         
       
     
@@ -65,7 +66,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="../.." title="Anki Community Wiki" class="md-header-nav__button md-logo" aria-label="Anki Community Wiki">
       
@@ -193,7 +196,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Anki Community Wiki" class="md-nav__button md-logo" aria-label="Anki Community Wiki">
       
@@ -293,6 +298,19 @@
   <a href="#usage" class="md-nav__link">
     Usage
   </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legacy-variant" class="md-nav__link">
+    Legacy variant
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -436,7 +454,7 @@
 
   <li class="md-nav__item">
     <a href="../../Tutorials/anki_custom_sync_server/" class="md-nav__link">
-      Custom Synchronization Server
+      Redirecting Anki to a custom synchronization server
     </a>
   </li>
 
@@ -486,6 +504,19 @@
     Usage
   </a>
   
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legacy-variant" class="md-nav__link">
+    Legacy variant
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -525,7 +556,18 @@ synchronization url in the client a smoother experience.</p>
 </tbody>
 </table>
 <h2 id="usage">Usage</h2>
-<p>Refer to the instructions in the <a href="https://github.com/ankicommunity/docker-anki-sync-server/tree/master/Addon%20for%20AnkiDesktop/SyncRedirector">GitHub repository</a>.</p>
+<h3 id="legacy-variant">Legacy variant</h3>
+<ol>
+<li>Launch Anki</li>
+<li>Go to Tools &gt; Add-ons</li>
+<li>Click Get Add-ons...</li>
+<li>Reference the SyncRedirector plugin with the code <a href="https://ankiweb.net/shared/info/2124817646"><strong>2124817646</strong></a></li>
+<li>If you use docker-anki-sync-server on an external server or custom port:</li>
+<li>Select SyncRedirector and click Config</li>
+<li>Configure your sync urls</li>
+<li>Restart Anki - optionally check your console output.</li>
+</ol>
+<p>From now on, you can synchronize your collection the same way you would if you were using AnkiWeb - look for the Sync button in the main window. Although Anki will ask for your AnkiWeb ID the first time, you need to enter the server credentials you've set up previously instead.</p>
                 
               
               
@@ -592,8 +634,8 @@ synchronization url in the client a smoother experience.</p>
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

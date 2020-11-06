@@ -8,8 +8,9 @@
       
       
       
+      
       <link rel="shortcut icon" href="../../../favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.3">
     
     
       
@@ -17,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2cb7adb3.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f0267088.min.css">
         
       
     
@@ -65,7 +66,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="../../.." title="Anki Community Wiki" class="md-header-nav__button md-logo" aria-label="Anki Community Wiki">
       
@@ -193,7 +196,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="Anki Community Wiki" class="md-nav__button md-logo" aria-label="Anki Community Wiki">
       
@@ -512,7 +517,7 @@
 
   <li class="md-nav__item">
     <a href="../../anki_custom_sync_server/" class="md-nav__link">
-      Custom Synchronization Server
+      Redirecting Anki to a custom synchronization server
     </a>
   </li>
 
@@ -693,7 +698,6 @@ ad-hoc manner, you can start an instance it right now.</p>
 # export PERSISTENCE_DIR=/home/kuklinistvan/anki-sync-server-persistence/
 # export DOCKER_IMAGE=kuklinistvan/anki-sync-server:latest
 </code></pre></div>
-
 <div class="admonition warning">
 <p class="admonition-title">Select your own image</p>
 <p>Do not copy <code>DOCKER_IMAGE</code> from here, as this is just an example. Grab the
@@ -707,7 +711,6 @@ from <a href="/Supported%20Projects/anki-sync-server/">Supported Projects</a>.</
        --rm \
        $DOCKER_IMAGE
 </code></pre></div>
-
 <table>
 <thead>
 <tr>
@@ -798,7 +801,7 @@ Please modify <code>&lt;SUBSTITUTE_$DOCKER_IMAGE_HERE&gt;</code> accordingly.</p
 
 services:
     anki-container:
-        image: kuklinistvan/anki-sync-server:latest
+        image: &lt;SUBSTITUTE_$DOCKER_IMAGE_HERE&gt;
         container_name: anki-container
 
         restart: always
@@ -867,14 +870,14 @@ be unencrypted! That means if you use Anki to memorize your passwords they will
 be leaked :) </p>
 <p><sup>Please don't do that though, as Anki is not designed in mind for safely
 handling risky data, such as passwords, in the first place.</sup></p>
-<p>Please refer to one of the solutions at the <a href="Tutorials/Encryption%20with%20proxy/Apache/">Encryption</a> section.</p>
+<p>Please refer to one of the solutions at the <a href="/Tutorials/Encryption%20with%20proxy/Apache/">Encryption</a> section.</p>
 <h2 id="troobleshooting">Troobleshooting</h2>
 <details class="note"><summary>Pull requests are welcome!</summary><p>If you encounter an error which is not listed here but you think
 it would be worth mentioning the solution, we are happy to accept
 your pull request to <a href="https://github.com/ankicommunity/ankicommunity.github.io">the repository of this portal</a>.</p>
 </details>
 <h3 id="exec-format-error">exec format error</h3>
-<p>Please refer to <a href="Tutorials/DockerHowto_ForeignArch/">this guide</a>.</p>
+<p>Please refer to <a href="/Tutorials/Docker/Howto_Recompiling/">this guide</a>.</p>
                 
               
               
@@ -941,8 +944,8 @@ your pull request to <a href="https://github.com/ankicommunity/ankicommunity.git
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

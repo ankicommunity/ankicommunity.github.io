@@ -11,8 +11,7 @@ Servers backed by Docker images have the advantage that:
 As of yet, the easiest and most reliable way to install `anki-sync-server` is
 probably to use one of our Docker images.
 
-**You can grab an image from [Supported
-Projects](/Supported%20Projects/anki-sync-server/).**
+**You can grab an image from [Projects](/Projects/anki-sync-server/).**
 
 ## Installation of Docker
 
@@ -54,7 +53,7 @@ ad-hoc manner, you can start an instance it right now.
 
     Do not copy `DOCKER_IMAGE` from here, as this is just an example. Grab the
     identifier of the image you wish to use
-    from [Supported Projects](/Supported%20Projects/anki-sync-server/).
+    from [Projects](/Projects/anki-sync-server/).
 
 ```
 docker run -it \
@@ -70,7 +69,7 @@ docker run -it \
 | `--mount type=bind,source="$PERSISTENCE_DIR",target=/app/data` | Mounts the persistence into the container, such that the instance can write data into it. |
 | `-p 27701:27701` | Opens a port on all of the network interfaces of host machine. First number: port number on the host machine (feel free to change it), second: the port of the server that runs in the container (fixed, you don't need to worry about it). |
 | `--rm` | Remove the container after the execution is done. Note that it does not remove the `$PERSISTENCE_DIR`. |
-| `$DOCKER_IMAGE` | The unique identifier of the image. Get it from [Supported Projects](/Supported%20Projects/anki-sync-server/). |
+| `$DOCKER_IMAGE` | The unique identifier of the image. Get it from [Projects](/Projects/anki-sync-server/). |
 | `--name` | An arbitrary name to reference the container instance later. |
 | `-it` | Run in foreground (see the [Docker reference](https://docs.docker.com/engine/reference/run/) for the exact meaning) |
 

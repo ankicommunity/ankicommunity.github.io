@@ -22,4 +22,4 @@ From now on, you can synchronize your collection the same way you would if you w
 
 ## AnkiDesktop 
 
-[SyncRedirector usage](/Supported%20Projects/SyncRedirector/)
+[SyncRedirector usage](/Projects/SyncRedirector/)

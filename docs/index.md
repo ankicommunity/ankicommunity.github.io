@@ -1,19 +1,25 @@
-# Home
-
-## Welcome to the Anki Community
+# Welcome to Anki Community
 
 ![](anki_community.png)
 
-We are a team of developers working together to maintain the original [`anki-sync-server`](/Supported%20Projects/anki-sync-server/) and other related projects. You have reached our primary knowledge base.
 
+We are a team of enthusiastic developers working together to maintain the original [`anki-sync-server`](/Supported%20Projects/anki-sync-server/) and other related projects. You have reached our primary knowledge base.
 
+## Join us today
 
-???+ Note
-    This site has been recently launched and it is under construction.
+You are going to encounter various subprojects [in the organization](https://github.com/ankicommunity/). As we are maintaining these mostly in our free time, there is only so much we are able to acomplish.
 
-    To improve this wiki, please send a pull request to [this repository](https://github.com/ankicommunity/ankicommunity.github.io)!
+We are a receptive community, happy to hear about everyone's ideas, and open to accept your contributions!
 
-### Where to go from here
+If you are interested in what we are doing and have some free time on your hand, we are looking forward to see you aboard ;)
+
+[![Discourse](https://img.shields.io/discourse/users?server=https%3A%2F%2Fankicommunity.discourse.group%2F)](https://ankicommunity.discourse.group/) [![GitHub issues](https://img.shields.io/github/stars/ankicommunity?style=social)](https://github.com/ankicommunity) [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/ankicommunity/community)
+
+## Where to go from here
 
 * [Find the organization on GitHub](https://github.com/ankicommunity/)
-* [Join and chat with us via Gitter](https://gitter.im/ankicommunity/community)
+* [Learn the means of getting in touch](/How%20to%20contact%20us/our_forums/)
+
+## Improve this wiki
+
+To add or correct information in this wiki, please send a pull request to [this repository](https://github.com/ankicommunity/ankicommunity.github.io)!

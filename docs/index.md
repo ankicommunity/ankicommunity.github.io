@@ -9,7 +9,7 @@ We are a team of enthusiastic developers working together to maintain the origin
 
 We are a receptive community, happy to hear about everyone's ideas, and we are excited to accept your contributions. If you are interested in what we are doing and have some free time on your hand, we are looking forward to see you aboard!
 
-You are going to encounter various subprojects [in the organization](https://github.com/ankicommunity/). As we maintain these mostly in our free time, there is only so much we are able to acomplish.
+You are going to encounter various subprojects [in the organization](https://github.com/ankicommunity/). As we maintain these mostly in our free time, there is only so much we are able to accomplish.
 
 We always appreciate to have another hand to build great things together! ;)
 

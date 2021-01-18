@@ -179,7 +179,7 @@ handling risky data, such as passwords, in the first place.</sup>
 Please refer to one of the solutions at the [Encryption](/Tutorials/Encryption%20with%20proxy/Apache/) section.
 
 
-## Troobleshooting
+## Troubleshooting
 
 ??? note "Pull requests are welcome!"
 

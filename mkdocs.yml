@@ -4,6 +4,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+    - navigation.sections
   favicon: favicon.ico
 
 markdown_extensions:
@@ -13,10 +14,10 @@ markdown_extensions:
 
 
 nav:
-  - Home: 'index.md'
-  - Supported Projects:
-    - anki-sync-server: 'Supported Projects/anki-sync-server.md'
-    - SyncRedirector: 'Supported Projects/SyncRedirector.md'
+  - Welcome: 'index.md'
+  - Projects:
+    - anki-sync-server: 'Projects/anki-sync-server.md'
+    - SyncRedirector: 'Projects/SyncRedirector.md'
   - Tutorials:
     - Index: 'Tutorials/Index.md'
     - Docker:
@@ -25,5 +26,6 @@ nav:
     - Encryption with proxy:
       - 'Tutorials/Encryption with proxy/Apache.md'
     - 'Tutorials/anki_custom_sync_server.md'
-  - Contact us via Gitter: 'https://gitter.im/ankicommunity/community'
+  - How to contact us:
+     - 'How to contact us/our_forums.md'
 

@@ -144,7 +144,7 @@
   <li class="md-tabs__item">
     
       <a href="../../.." class="md-tabs__link">
-        Home
+        Welcome
       </a>
     
   </li>
@@ -155,8 +155,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../Supported%20Projects/anki-sync-server/" class="md-tabs__link">
-          Supported Projects
+        <a href="../../../Projects/anki-sync-server/" class="md-tabs__link">
+          Projects
         </a>
       
     </li>
@@ -177,11 +177,16 @@
 
       
         
-  <li class="md-tabs__item">
-    <a href="https://gitter.im/ankicommunity/community" class="md-tabs__link">
-      Contact us via Gitter
-    </a>
-  </li>
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../How%20to%20contact%20us/our_forums/" class="md-tabs__link">
+          How to contact us
+        </a>
+      
+    </li>
+  
 
       
     </ul>
@@ -218,7 +223,7 @@
 
   <li class="md-nav__item">
     <a href="../../.." class="md-nav__link">
-      Home
+      Welcome
     </a>
   </li>
 
@@ -233,13 +238,13 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
-      Supported Projects
+      Projects
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Supported Projects" data-md-level="1">
+    <nav class="md-nav" aria-label="Projects" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
-        Supported Projects
+        Projects
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -250,7 +255,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Supported%20Projects/anki-sync-server/" class="md-nav__link">
+    <a href="../../../Projects/anki-sync-server/" class="md-nav__link">
       anki-sync-server
     </a>
   </li>
@@ -262,7 +267,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Supported%20Projects/SyncRedirector/" class="md-nav__link">
+    <a href="../../../Projects/SyncRedirector/" class="md-nav__link">
       SyncRedirector
     </a>
   </li>
@@ -429,11 +434,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#troobleshooting" class="md-nav__link">
-    Troobleshooting
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
   </a>
   
-    <nav class="md-nav" aria-label="Troobleshooting">
+    <nav class="md-nav" aria-label="Troubleshooting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -532,10 +537,36 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      How to contact us
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="How to contact us" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        How to contact us
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="https://gitter.im/ankicommunity/community" class="md-nav__link">
-      Contact us via Gitter
+    <a href="../../../How%20to%20contact%20us/our_forums/" class="md-nav__link">
+      Our forums
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -624,11 +655,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#troobleshooting" class="md-nav__link">
-    Troobleshooting
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
   </a>
   
-    <nav class="md-nav" aria-label="Troobleshooting">
+    <nav class="md-nav" aria-label="Troubleshooting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -668,8 +699,7 @@
 </ul>
 <p>As of yet, the easiest and most reliable way to install <code>anki-sync-server</code> is
 probably to use one of our Docker images.</p>
-<p><strong>You can grab an image from <a href="/Supported%20Projects/anki-sync-server/">Supported
-Projects</a>.</strong></p>
+<p><strong>You can grab an image from <a href="/Projects/anki-sync-server/">Projects</a>.</strong></p>
 <h2 id="installation-of-docker">Installation of Docker</h2>
 <p>Please refer to the tutorial on the installation <a href="https://docs.docker.com/get-docker/">Docker's
 manual</a> to get started.</p>
@@ -702,7 +732,7 @@ ad-hoc manner, you can start an instance it right now.</p>
 <p class="admonition-title">Select your own image</p>
 <p>Do not copy <code>DOCKER_IMAGE</code> from here, as this is just an example. Grab the
 identifier of the image you wish to use
-from <a href="/Supported%20Projects/anki-sync-server/">Supported Projects</a>.</p>
+from <a href="/Projects/anki-sync-server/">Projects</a>.</p>
 </div>
 <div class="highlight"><pre><span></span><code>docker run -it \
        --mount type=bind,source=&quot;$PERSISTENCE_DIR&quot;,target=/app/data \
@@ -733,7 +763,7 @@ from <a href="/Supported%20Projects/anki-sync-server/">Supported Projects</a>.</
 </tr>
 <tr>
 <td><code>$DOCKER_IMAGE</code></td>
-<td>The unique identifier of the image. Get it from <a href="/Supported%20Projects/anki-sync-server/">Supported Projects</a>.</td>
+<td>The unique identifier of the image. Get it from <a href="/Projects/anki-sync-server/">Projects</a>.</td>
 </tr>
 <tr>
 <td><code>--name</code></td>
@@ -871,7 +901,7 @@ be leaked :) </p>
 <p><sup>Please don't do that though, as Anki is not designed in mind for safely
 handling risky data, such as passwords, in the first place.</sup></p>
 <p>Please refer to one of the solutions at the <a href="/Tutorials/Encryption%20with%20proxy/Apache/">Encryption</a> section.</p>
-<h2 id="troobleshooting">Troobleshooting</h2>
+<h2 id="troubleshooting">Troubleshooting</h2>
 <details class="note"><summary>Pull requests are welcome!</summary><p>If you encounter an error which is not listed here but you think
 it would be worth mentioning the solution, we are happy to accept
 your pull request to <a href="https://github.com/ankicommunity/ankicommunity.github.io">the repository of this portal</a>.</p>
@@ -950,7 +980,7 @@ your pull request to <a href="https://github.com/ankicommunity/ankicommunity.git
       <script>
         app = initialize({
           base: "../../..",
-          features: ['navigation.instant', 'navigation.tabs'],
+          features: ['navigation.instant', 'navigation.tabs', 'navigation.sections'],
           search: Object.assign({
             worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)

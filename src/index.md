@@ -1,6 +1,6 @@
 # Welcome to Anki Community
 
-![](anki_community.png)
+![Anki Community ogo](./assets/anki_community.png)
 
 
 We are a team of enthusiastic developers working together to maintain the original [`anki-sync-server`](/Projects/anki-sync-server/) and other related projects. You have reached our primary knowledge base.

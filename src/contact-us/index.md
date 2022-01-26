@@ -1,4 +1,4 @@
-# Our forums
+# Contact Us
 
 [![Discourse](https://img.shields.io/discourse/users?server=https%3A%2F%2Fankicommunity.discourse.group%2F)](https://ankicommunity.discourse.group/) [![GitHub issues](https://img.shields.io/github/stars/ankicommunity?style=social)](https://github.com/ankicommunity) [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/ankicommunity/community)
 

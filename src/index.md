@@ -1,9 +1,9 @@
 # Welcome to Anki Community
 
-![Anki Community ogo](./assets/anki_community.png)
+![Anki Community ogo](/assets/anki-community.png)
 
 
-We are a team of enthusiastic developers working together to maintain the original [`anki-sync-server`](/Projects/anki-sync-server/) and other related projects. You have reached our primary knowledge base.
+We are a team of enthusiastic developers working together to maintain the original [`anki-sync-server`](/projects/anki-sync-server/) and other related projects. You have reached our primary knowledge base.
 
 ## Join us today
 
@@ -19,7 +19,7 @@ We always appreciate to have another hand to build great things together! ;)
 ## Where to go from here
 
 * [Find the organization on GitHub](https://github.com/ankicommunity/)
-* [Learn the means of getting in touch](/How%20to%20contact%20us/our_forums/)
+* [Learn the means of getting in touch](/contact-us)
 
 ## Improve this wiki
 

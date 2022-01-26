@@ -21,15 +21,14 @@ nav:
   - Welcome: 'index.md'
   - News: 'news.md'
   - Projects:
-    - anki-sync-server: 'Projects/anki-sync-server.md'
-    - SyncRedirector: 'Projects/SyncRedirector.md'
+    - Anki Sync Server: 'projects/anki-sync-server.md'
+    - Sync Redirector: 'projects/sync-redirector.md'
   - Tutorials:
-    - Index: 'Tutorials/Index.md'
+    - Index: 'tutorials/index.md'
     - Docker:
-      - 'Tutorials/Docker/Howto.md'
-      - 'Tutorials/Docker/Howto_Recompiling.md'
+      - 'tutorials/docker/how-to.md'
+      - 'tutorials/docker/how-to-recompiling.md'
     - Encryption with proxy:
-      - 'Tutorials/Encryption with proxy/Apache.md'
-    - 'Tutorials/anki_custom_sync_server.md'
-  - How to contact us:
-     - 'How to contact us/our_forums.md'
+      - 'tutorials/encryption-with-proxy/apache.md'
+    - 'tutorials/anki-custom-sync-server.md'
+  - Contact Us: 'contact-us/index.md'

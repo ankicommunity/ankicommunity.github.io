@@ -1,4 +1,4 @@
-![](book_pixabay.png)
+![](/assets/tutorials/book-pixabay.png)
 
 Hey there! If you are a newcomer, you are at the right place.
 

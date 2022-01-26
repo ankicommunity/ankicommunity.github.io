@@ -1,4 +1,11 @@
+strict: true
 site_name: Anki Community Wiki
+site_description: A centeralised wiki all about the Anki Community.
+site_author: Anki Community
+site_url: https://ankicommunity.github.io/
+repo_url: https://github.com/ankicommunity/ankicommunity.github.io
+docs_dir: src
+site_dir: build
 theme:
   name: material
   features:
@@ -6,15 +13,13 @@ theme:
     - navigation.tabs
     - navigation.sections
   favicon: favicon.ico
-
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - admonition
-
-
 nav:
   - Welcome: 'index.md'
+  - News: 'news.md'
   - Projects:
     - anki-sync-server: 'Projects/anki-sync-server.md'
     - SyncRedirector: 'Projects/SyncRedirector.md'
@@ -28,4 +33,3 @@ nav:
     - 'Tutorials/anki_custom_sync_server.md'
   - How to contact us:
      - 'How to contact us/our_forums.md'
-

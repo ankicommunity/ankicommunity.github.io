@@ -21,7 +21,7 @@ nav:
   - Welcome: 'index.md'
   - News: 'news.md'
   - Projects:
-    - Anki Sync Server: 'projects/anki-sync-server.md'
+    - Anki Sync Server: 'projects/anki-sync-server/index.md'
     - Sync Redirector: 'projects/sync-redirector.md'
   - Tutorials:
     - Index: 'tutorials/index.md'
